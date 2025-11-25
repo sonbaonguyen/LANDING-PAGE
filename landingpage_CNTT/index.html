@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoa CNTT – Trường Cao đẳng Công nghệ cao Hà Nội (HHT)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>KHOA CÔNG NGHỆ THÔNG TIN – HHT</h1>
+            <p>Khoa đào tạo thực chiến – định hướng doanh nghiệp – cơ hội việc làm cao.</p>
+            <a href="#form" class="btn">ĐĂNG KÝ TƯ VẤN NGAY</a>
+        </div>
+    </header>
+
+    <!-- GIỚI THIỆU -->
+    <section class="intro">
+        <h2>Giới thiệu Khoa CNTT</h2>
+        <p>
+            Khoa Công nghệ thông tin – Trường Cao đẳng Công nghệ cao Hà Nội (HHT)
+            đào tạo theo hướng thực hành, giúp sinh viên nắm chắc kỹ năng, thành thạo công nghệ,
+            sẵn sàng làm việc ngay sau khi tốt nghiệp. Chương trình học gắn sát với nhu cầu của doanh nghiệp,
+            giúp sinh viên có việc làm ngay từ năm 2.
+        </p>
+    </section>
+
+    <!-- NGÀNH ĐÀO TẠO -->
+    <section class="majors">
+        <h2>Các ngành đào tạo nổi bật</h2>
+        <div class="major-grid">
+
+            <!-- CNPM -->
+            <div class="major-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/270/270798.png" alt="">
+                <h3>Công nghệ phần mềm</h3>
+                <p>
+                    Sinh viên được học từ tư duy lập trình, phân tích yêu cầu,
+                    thiết kế hệ thống đến kiểm thử & triển khai phần mềm.
+                    Tập trung nhiều vào thực hành để sinh viên làm được dự án thực tế.
+                </p>
+            </div>
+
+            <!-- TK WEB -->
+            <div class="major-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" alt="">
+                <h3>Thiết kế Website</h3>
+                <p>
+                    Học HTML/CSS/JS, giao diện chuẩn UX/UI, responsive, thiết kế landing page chuyên nghiệp.
+                    Sinh viên có thể làm Web Designer, Frontend Developer ngay sau khi ra trường.
+                </p>
+            </div>
+
+            <!-- ĐỒ HỌA -->
+            <div class="major-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1829/1829581.png" alt="">
+                <h3>Thiết kế Đồ họa</h3>
+                <p>
+                    Học Photoshop, Illustrator, InDesign, thiết kế logo, banner, ấn phẩm truyền thông.
+                    Môi trường thực hành liên tục cùng giảng viên giàu kinh nghiệm.
+                </p>
+            </div>
+
+            <!-- NỘI THẤT -->
+            <div class="major-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png" alt="">
+                <h3>Thiết kế Nội thất</h3>
+                <p>
+                    Trang bị kiến thức mỹ thuật, phối màu, bố cục không gian và dựng mô hình 3D bằng SketchUp, 3DsMax.
+                    Sinh viên được tiếp cận với nhiều dự án thiết kế thực tế ngay trong quá trình học.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LÝ DO CHỌN KHOA CNTT -->
+    <section class="reasons">
+        <h2>Vì sao nên chọn Khoa CNTT – HHT?</h2>
+        <ul>
+            <li>Chương trình đào tạo thực chiến – 70% thực hành.</li>
+            <li>Môi trường học hiện đại, phòng máy cấu hình cao.</li>
+            <li>Giảng viên thân thiện, chuyên môn giỏi, giàu kinh nghiệm.</li>
+            <li>Liên kết doanh nghiệp mạnh – hỗ trợ thực tập và việc làm.</li>
+            <li>Sinh viên được làm dự án thật ngay từ năm nhất.</li>
+            <li>Cơ hội việc làm cao sau khi tốt nghiệp.</li>
+        </ul>
+    </section>
+
+    <section id="form" class="form-section">
+        <h2>Đăng ký tư vấn tuyển sinh</h2>
+
+        <form name="submit-to-google-sheet">
+
+            <input type="text" name="HoTen" placeholder="Họ và tên" required>
+
+            <input type="tel" name="SoDienThoai" placeholder="Số điện thoại" required>
+
+            <input type="text" name="NganhQuanTam" placeholder="Ngành bạn quan tâm" required>
+
+            <button class="btn" type="submit">Gửi đăng ký</button>
+        </form>
+
+        <span id="msg" style="color: green; font-weight: bold; margin-top: 10px; display: block;"></span>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p> Khoa Công nghệ thông tin – Trường Cao đẳng Công nghệ cao Hà Nội (HHT)</p>
+    </footer>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCoEabzinIfqaASXedrD65J3S2n2y-mckm6JFTdoahu2N9dli6rrlIxqPhFPqPc5NM/exec'
+
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            // Hiện chữ đang gửi
+            msg.innerHTML = "Đang gửi thông tin..."
+            msg.style.color = "#b30000"
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Đăng ký thành công! Nhà trường sẽ liên hệ sớm."
+                    msg.style.color = "green"
+                    form.reset()
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                })
+                .catch(error => {
+                    msg.innerHTML = "Có lỗi xảy ra. Vui lòng thử lại!"
+                    console.error('Error!', error.message)
+                })
+        })
+    </script>
+
+</body>
+
+</html>

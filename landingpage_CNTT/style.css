@@ -1,0 +1,176 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #fff;
+    line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+    height: 80vh;
+    background: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(150, 10, 10, 0.55);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    padding: 12px 26px;
+    background: #d70000;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #b30000;
+}
+
+/* GIỚI THIỆU */
+.intro,
+.majors,
+.reasons,
+.form-section {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.intro h2,
+.majors h2,
+.reasons h2,
+.form-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #b30000;
+}
+
+.intro p {
+    width: 70%;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* MAJORS */
+.major-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.major-card {
+    background: #fff7f7;
+    border: 1px solid #ffd6d6;
+    padding: 25px;
+    border-radius: 14px;
+    transition: 0.25s;
+}
+
+.major-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.major-card h3 {
+    font-size: 1.3rem;
+    color: #b30000;
+    margin-bottom: 10px;
+}
+
+.major-card p {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.major-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* REASONS */
+.reasons ul {
+    margin-top: 20px;
+    text-align: left;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reasons li {
+    font-size: 1.05rem;
+    padding: 7px 0;
+}
+
+/* FORM */
+form {
+    width: 55%;
+    margin: 30px auto;
+}
+
+form input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    background: #d70000;
+    color: white;
+    margin-top: 60px;
+}
+
+/* Thêm vào cuối file style.css nếu muốn */
+form button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    /* Nút bấm rộng bằng form cho đẹp */
+}
+
+form button:active {
+    transform: scale(0.98);
+    /* Hiệu ứng nhấn nút */
+}
